@@ -8,9 +8,7 @@ group = "Research"
 subtitle = "University–industry collaborative project · Project lead"
 date = "Sep 2025 — May 2026"
 content = """
-Study the conformational changes and self-assembly of soluble silk fibroin into films at wound sites, and its interactions with integrins as an extracellular matrix (ECM) material.
-
-- **Methods:** Combine molecular dynamics simulations with cell-based experiments, including scratch assays, to validate simulation results and investigate wound-healing mechanisms.
+- **Research content:** Study the conformational changes and self-assembly of soluble silk fibroin into films at wound sites, and its interactions with integrins as an extracellular matrix (ECM) material. Combine molecular dynamics simulations with cell-based experiments, including scratch assays, to validate simulation results and investigate wound-healing mechanisms.
 - **My responsibilities:** Review prior literature, design experiments, conduct molecular dynamics simulations, and perform cell-based validation.
 - **Industry partner:** Shanghai Sisu Technology Co., Ltd.
 """
@@ -22,9 +20,7 @@ group = "Research"
 subtitle = "Overseas internship project · Project lead · McGill University, Canada"
 date = "Jun 2025 — Jun 2026"
 content = """
-Integrate multiple protein language models (PLMs), inverse-folding algorithms, and SCA coevolution analysis to build a general protein evolution model.
-
-- **Project scope:** Evaluate model feasibility using deep mutational scanning (DMS) benchmarks, apply the model to BFP and CYP enzymes, and validate mutation effects through mutant-expression experiments.
+- **Research content:** Integrate multiple protein language models (PLMs), inverse-folding algorithms, and SCA coevolution analysis to build a general protein evolution model. Evaluate model feasibility using deep mutational scanning (DMS) benchmarks, apply the model to BFP and CYP enzymes, and validate mutation effects through mutant-expression experiments.
 - **My responsibilities:** Review literature, integrate algorithms, build models, and conduct DMS benchmarking.
 - **Host institution:** McGill University, Canada.
 """
