@@ -8,12 +8,12 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
     const container = useRef<HTMLDivElement>(null);
     const [width, setWidth] = useState(600);
     const [selected, setSelected] = useState(config.points.length - 1);
-    const [replay, setReplay] = useState(0);
     const reduceMotion = useReducedMotion();
     const inView = useInView(container, { once: true, amount: 0.4 });
     const titleId = useId();
     const descriptionId = useId();
     const clipId = useId();
+    const cumulativeColor = '#bfbfbf';
 
     useEffect(() => {
         const element = container.current;
@@ -45,10 +45,9 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
     return (
         <section aria-label={config.title} className="mt-6 border-t border-border pt-6">
             <h4 className="text-lg font-semibold text-primary">{config.title}</h4>
-            <p className="mt-1 text-sm text-neutral-500">{config.subtitle}</p>
             <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-neutral-600 dark:text-neutral-500" aria-label={config.subtitle}>
                 <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="inline-block w-6 border-t-2 border-accent" />{config.semester_label}</span>
-                <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="inline-block w-6 border-t-2 border-dashed border-primary" />{config.cumulative_label}</span>
+                <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="inline-block w-6 border-t-2 border-dashed" style={{ borderColor: cumulativeColor }} />{config.cumulative_label}</span>
             </div>
             <div className="mt-4 mb-2 flex flex-wrap items-center justify-between gap-3">
                 <p data-gpa-selection className="flex flex-wrap items-baseline gap-x-4 gap-y-1 text-sm text-neutral-600 dark:text-neutral-500">
@@ -56,10 +55,6 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
                     <span>{config.semester_label}<strong className="ml-2 text-base tabular-nums font-semibold text-primary">{active.gpa.toFixed(2)}</strong></span>
                     <span>{config.cumulative_label}<strong className="ml-2 text-base tabular-nums font-semibold text-primary">{active.cumulative_gpa.toFixed(2)}</strong></span>
                 </p>
-                <button type="button" onClick={() => setReplay(value => value + 1)}
-                    className="rounded-md border border-border px-3 py-2 text-xs text-primary transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
-                    {config.replay_label}
-                </button>
             </div>
             <div ref={container} className="relative w-full" style={{ height }}>
                 <svg data-gpa-chart data-gpa-plot-width={right - left + 14} role="img" aria-labelledby={`${titleId} ${descriptionId}`}
@@ -68,7 +63,7 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
                     <desc id={descriptionId}>{config.subtitle}. {config.points.map(point => `${point.label}: ${config.semester_label} ${point.gpa.toFixed(2)}, ${config.cumulative_label} ${point.cumulative_gpa.toFixed(2)}`).join('; ')}.</desc>
                     <defs>
                         <clipPath id={clipId}>
-                            <motion.rect key={replay} data-gpa-reveal x={left - 7} y={top - 10} height={bottom - top + 20}
+                            <motion.rect data-gpa-reveal x={left - 7} y={top - 10} height={bottom - top + 20}
                                 initial={reduceMotion ? false : { width: 0 }}
                                 animate={{ width: inView || reduceMotion ? right - left + 14 : 0 }}
                                 transition={{ duration: reduceMotion ? 0 : 1.1, ease: 'easeInOut' }} />
@@ -84,7 +79,7 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
                     <text x={(left + right) / 2} y={height - 2} textAnchor="middle" fill="var(--neutral-500)" fontSize="12">{config.x_label}</text>
                     <g clipPath={`url(#${clipId})`}>
                         <path data-gpa-line d={path} fill="none" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path data-cumulative-line d={cumulativePath} fill="none" stroke="var(--primary)" strokeWidth="2"
+                        <path data-cumulative-line d={cumulativePath} fill="none" stroke={cumulativeColor} strokeWidth="2"
                             strokeDasharray="5 5" strokeLinecap="round" strokeLinejoin="round" />
                     </g>
                     {config.points.map((point, index) => (
@@ -94,7 +89,7 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
                             <text x={x(index)} y={y(point.gpa) + (point.cumulative_gpa > point.gpa && Math.abs(y(point.gpa) - y(point.cumulative_gpa)) < 36 ? 22 : -15)} textAnchor={index === 0 ? 'start' : index === config.points.length - 1 ? 'end' : 'middle'}
                                 fill="var(--primary)" fontSize="12" fontWeight="600">{point.gpa.toFixed(2)}</text>
                             <rect x={x(index) - 3} y={y(point.cumulative_gpa) - 3} width="6" height="6"
-                                fill={index === selected ? 'var(--primary)' : 'var(--surface)'} stroke="var(--primary)" strokeWidth="1.5" />
+                                fill={index === selected ? cumulativeColor : 'var(--surface)'} stroke={cumulativeColor} strokeWidth="1.5" />
                             <text x={x(index)} y={bottom + 25} textAnchor={index === 0 ? 'start' : index === config.points.length - 1 ? 'end' : 'middle'}
                                 fill="var(--neutral-500)" fontSize="12">{point.label}</text>
                         </g>
@@ -108,7 +103,6 @@ export default function AcademicTrend({ config }: { config: AcademicTrendConfig 
                         style={{ left: x(index), top: (y(point.gpa) + y(point.cumulative_gpa)) / 2, height: Math.abs(y(point.gpa) - y(point.cumulative_gpa)) + 44 }} />
                 ))}
             </div>
-            <p className="mt-2 text-xs text-neutral-500">{config.range_note}</p>
         </section>
     );
 }

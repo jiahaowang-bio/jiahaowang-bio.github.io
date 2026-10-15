@@ -20,8 +20,6 @@ semester_label = "单学期 GPA"
 cumulative_label = "累计 GPA"
 x_label = "学期"
 y_label = "GPA（5分制）"
-replay_label = "重播动画"
-range_note = "纵轴为局部范围，便于查看变化。"
 max_gpa = 5.0
 
 [[items.trend.points]]
@@ -46,6 +44,7 @@ cumulative_gpa = 4.81
 
 [[items]]
 title = "核心课程"
+content_columns = 2
 subtitle = "数学、编程与生命科学基础"
 content = """
 - **高等数学：** 5.0

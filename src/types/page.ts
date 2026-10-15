@@ -22,8 +22,6 @@ export interface AcademicTrendConfig {
     subtitle: string;
     x_label: string;
     y_label: string;
-    replay_label: string;
-    range_note: string;
     semester_label: string;
     cumulative_label: string;
     max_gpa: number;
@@ -36,6 +34,7 @@ export interface CardItem {
     subtitle?: string;
     date?: string;
     content?: string;
+    content_columns?: 1 | 2;
     tags?: string[];
     link?: string;
     image?: string;

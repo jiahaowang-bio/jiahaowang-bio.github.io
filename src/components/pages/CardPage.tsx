@@ -77,7 +77,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                         <p className={`${embedded ? "text-sm" : "text-base"} text-link font-medium mb-3`}>{item.subtitle}</p>
                                     )}
                                     {item.content && (
-                                        <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
+                                        <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed ${item.content_columns === 2 ? 'sm:[&_ul]:columns-2 [&_ul]:gap-x-8 [&_li]:break-inside-avoid' : ''}`}>
                                             <ReactMarkdown components={markdownComponents}>
                                                 {item.content}
                                             </ReactMarkdown>

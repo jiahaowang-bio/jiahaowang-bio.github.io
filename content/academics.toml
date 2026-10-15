@@ -20,8 +20,6 @@ semester_label = "Semester GPA"
 cumulative_label = "Cumulative GPA"
 x_label = "Semester"
 y_label = "GPA (out of 5)"
-replay_label = "Replay animation"
-range_note = "The vertical axis shows a partial range to make changes easier to see."
 max_gpa = 5.0
 
 [[items.trend.points]]
@@ -46,6 +44,7 @@ cumulative_gpa = 4.81
 
 [[items]]
 title = "Core Courses"
+content_columns = 2
 subtitle = "Foundations in mathematics, programming, and life sciences"
 content = """
 - **Advanced Mathematics:** 5.0
