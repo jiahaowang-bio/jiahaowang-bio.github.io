@@ -1,0 +1,40 @@
+[site]
+title = "王迦澔"
+description = "王迦澔，同济大学基础学科拔尖基地（生命科学）大三本科生。个人简介、学业成绩、经历、探索与简历。"
+last_updated = "2026年10月14日"
+
+[author]
+name = "王迦澔"
+title = "本科生 · 大三"
+institution = "同济大学"
+program = "基础学科拔尖基地（生命科学）"
+
+[[navigation]]
+title = "关于我"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "学业成绩"
+type = "page"
+target = "academics"
+href = "/academics"
+
+[[navigation]]
+title = "经历"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "探索"
+type = "page"
+target = "exploration"
+href = "/exploration"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

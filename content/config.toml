@@ -1,0 +1,64 @@
+[site]
+title = "Jiahao Wang"
+description = "Jiahao Wang, a third-year undergraduate at Tongji University. Academics, experience, exploration, and CV."
+favicon = "/favicon.svg"
+last_updated = "October 14, 2026"
+
+[author]
+name = "Jiahao Wang"
+title = "Undergraduate · Year 3"
+institution = "Tongji University"
+program = "Basic Disciplines Talent Training Base (Life Sciences)"
+avatar = "/jiahao-wang.jpg"
+
+[social]
+phone = "19931388876"
+email = "2452933@tongji.edu.cn"
+github = "https://github.com/jiahaowang-bio"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "zh"
+mode = "fixed"
+fixed_locale = "zh"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "About Me"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Academics"
+type = "page"
+target = "academics"
+href = "/academics"
+
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "Exploration"
+type = "page"
+target = "exploration"
+href = "/exploration"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

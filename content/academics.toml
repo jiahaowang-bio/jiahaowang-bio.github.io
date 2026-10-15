@@ -1,0 +1,37 @@
+type = "card"
+title = "Academics"
+description = "School of Life Sciences and Technology, Tongji University · Basic Disciplines Talent Training Base (Life Sciences)"
+
+[[items]]
+title = "Academic Record"
+subtitle = "Third-year undergraduate"
+date = "Sep 2024 — Present"
+content = """
+- **GPA:** 4.80 / 5.00
+- **Rank:** 4 / 86 (4.65%)
+- **Program:** Basic Disciplines Talent Training Base (Life Sciences)
+"""
+tags = ["Tongji University", "Life Sciences"]
+
+[[items]]
+title = "Core Courses"
+subtitle = "Foundations in mathematics, programming, and life sciences"
+content = """
+- **Advanced Mathematics:** 5.0
+- **Linear Algebra:** 5.0
+- **Probability Theory and Mathematical Statistics:** 5.0
+- **Python Programming:** 5.0
+- **Biochemistry:** 5.0
+- **Molecular Biology:** 5.0
+- **Cell Biology:** 5.0
+- **Biostatistics:** 5.0
+"""
+
+[[items]]
+title = "English Proficiency"
+subtitle = "CET-4 · CET-6"
+content = """
+- **College English Test, Band 4:** Passed
+- **College English Test, Band 6:** Passed
+- Able to search for and read scientific literature in English.
+"""

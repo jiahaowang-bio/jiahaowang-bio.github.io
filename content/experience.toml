@@ -1,0 +1,41 @@
+type = "card"
+title = "Experience"
+description = "My responsibilities in research projects, an overseas internship, and a modeling competition."
+
+[[items]]
+title = "Computational Study of Silk Fibroin Conformational Changes and Wound Healing"
+subtitle = "University–industry collaborative project · Project lead"
+date = "Sep 2025 — May 2026"
+content = """
+Study the conformational changes and self-assembly of soluble silk fibroin into films at wound sites, and its interactions with integrins as an extracellular matrix (ECM) material.
+
+- **Methods:** Combine molecular dynamics simulations with cell-based experiments, including scratch assays, to validate simulation results and investigate wound-healing mechanisms.
+- **My responsibilities:** Review prior literature, design experiments, conduct molecular dynamics simulations, and perform cell-based validation.
+- **Industry partner:** Shanghai Sisu Technology Co., Ltd.
+"""
+tags = ["Molecular Dynamics", "Silk Fibroin", "Cell Experiments"]
+
+[[items]]
+title = "Protein Evolution Modeling with PLMs and Inverse Folding"
+subtitle = "Overseas internship project · Project lead · McGill University, Canada"
+date = "Jun 2025 — Jun 2026"
+content = """
+Integrate multiple protein language models (PLMs), inverse-folding algorithms, and SCA coevolution analysis to build a general protein evolution model.
+
+- **Project scope:** Evaluate model feasibility using deep mutational scanning (DMS) benchmarks, apply the model to BFP and CYP enzymes, and validate mutation effects through mutant-expression experiments.
+- **My responsibilities:** Review literature, integrate algorithms, build models, and conduct DMS benchmarking.
+- **Host institution:** McGill University, Canada.
+"""
+tags = ["Protein Language Models", "Inverse Folding", "DMS Benchmarking"]
+
+[[items]]
+title = "2026 National College Student Statistical Modeling Competition"
+subtitle = "Third Prize, Shanghai division"
+date = "Jul 2026"
+content = """
+**Research topic:** Ordinal-regression modeling for diabetic retinopathy grading in the context of Healthy China 2030.
+
+- **Methods:** Integrate CBAM attention into EfficientNet-B2, use weighted random sampling, and reformulate five-level grading as a CORAL ordinal-regression task. Train jointly for DR grading and segmentation of four lesion categories, including microaneurysms and hemorrhages.
+- **My contributions:** Review literature, contribute to manuscript writing and editing and deep-learning modeling, and prepare part of the presentation slides.
+"""
+tags = ["Statistical Modeling", "Ordinal Regression", "Multi-task Learning"]

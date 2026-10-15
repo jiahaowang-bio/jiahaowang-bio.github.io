@@ -1,0 +1,45 @@
+type = "card"
+title = "Exploration"
+description = "Research reading, model development, and practical experiments around questions in life sciences."
+
+[[items]]
+title = "Protein Language Models and Protein Evolution"
+subtitle = "From literature review to algorithm integration"
+content = """
+- **Question:** How can protein sequence, structure, and coevolution information be combined to model protein evolution?
+- **Methods explored:** Integrate multiple PLMs, inverse-folding algorithms, and SCA coevolution analysis to build a general model.
+- **Practice and evaluation:** Conduct DMS benchmarking; project applications include BFP and CYP enzymes.
+- **My work:** Review literature, integrate algorithms, build models, and run benchmarks.
+"""
+tags = ["AI4Bio", "Research Reading", "Protein Evolution"]
+
+[[items]]
+title = "Molecular Dynamics and Silk Fibroin Materials"
+subtitle = "Connecting molecular simulations with cell-based experiments"
+content = """
+- **Question:** How do silk fibroin conformational changes, film self-assembly, and ECM–integrin interactions relate to its wound-healing role?
+- **Methods explored:** Study silk fibroin behavior with molecular dynamics simulations and validate simulation results through cell-based experiments, including scratch assays.
+- **My work:** Review prior literature, design experiments, conduct simulations, and perform cell-based validation.
+"""
+tags = ["Molecular Dynamics", "Silk Fibroin", "Experimental Validation"]
+
+[[items]]
+title = "Ordinal Grading and Multi-task Learning in Medical Imaging"
+subtitle = "Deep-learning practice in a statistical modeling competition"
+content = """
+- **Question:** How can five-level diabetic retinopathy grading be learned jointly with lesion segmentation?
+- **Methods explored:** EfficientNet-B2 with CBAM attention, weighted random sampling, CORAL ordinal regression, and joint training for grading and segmentation of four lesion categories.
+- **My work:** Contribute to deep-learning modeling, manuscript writing and editing, and presentation materials.
+"""
+tags = ["Medical Imaging", "CORAL", "Multi-task Learning"]
+
+[[items]]
+title = "Learning and Research Practice"
+subtitle = "Learning methods and coordinating work through projects"
+content = """
+- **Literature:** Search for and read scientific literature in English, relating methods to research questions.
+- **Programming and modeling:** Basic programming and deep-learning knowledge, independent study of machine learning and deep learning, and project experience with PLMs and EfficientNet.
+- **Collaboration:** Coordinate team tasks as a project lead and discuss research with advisors.
+- **Ongoing interests:** AI4Bio, virtual cells, agent in Bio, and molecular dynamics simulations.
+"""
+tags = ["Independent Learning", "Literature Review", "Teamwork"]

@@ -1,0 +1,11 @@
+type = "text"
+title = "CV"
+source = "cv-intro.md"
+pdf = "/jiahao-wang-cv.pdf"
+download_label = "Download CV"
+
+[pdf_preview]
+src = "/jiahao-wang-cv-preview.png"
+width = 1489
+height = 2105
+alt = "Jiahao Wang's CV"

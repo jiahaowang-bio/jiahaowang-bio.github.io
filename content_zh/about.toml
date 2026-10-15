@@ -1,0 +1,17 @@
+type = "about"
+title = "关于我"
+
+[profile]
+research_interests = ["AI4Bio", "虚拟细胞", "agent in Bio", "分子动力学模拟"]
+
+[[sections]]
+id = "introduction"
+type = "markdown"
+source = "bio.md"
+title = "关于我"
+
+[[sections]]
+id = "materials"
+type = "markdown"
+source = "overview.md"
+title = "展示内容"

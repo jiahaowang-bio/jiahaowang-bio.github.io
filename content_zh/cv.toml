@@ -1,0 +1,11 @@
+type = "text"
+title = "简历"
+source = "cv-intro.md"
+pdf = "/jiahao-wang-cv.pdf"
+download_label = "下载简历"
+
+[pdf_preview]
+src = "/jiahao-wang-cv-preview.png"
+width = 1489
+height = 2105
+alt = "王迦澔个人简历"

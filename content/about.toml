@@ -1,0 +1,17 @@
+type = "about"
+title = "About Me"
+
+[profile]
+research_interests = ["AI4Bio", "Virtual Cells", "agent in Bio", "Molecular Dynamics Simulations"]
+
+[[sections]]
+id = "introduction"
+type = "markdown"
+source = "bio.md"
+title = "About Me"
+
+[[sections]]
+id = "materials"
+type = "markdown"
+source = "overview.md"
+title = "Explore My Profile"
