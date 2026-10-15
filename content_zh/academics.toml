@@ -7,11 +7,42 @@ title = "成绩概况"
 subtitle = "本科生 · 大三"
 date = "2024.09 — 至今"
 content = """
-- **GPA：** 4.80 / 5.00
+- **GPA：** 4.81 / 5.00
 - **排名：** 4 / 86（4.65%）
 - **专业：** 基础学科拔尖基地（生命科学）
 """
 tags = ["同济大学", "生命科学"]
+
+[items.trend]
+title = "学期成绩变化"
+subtitle = "单学期与累计 GPA · 满分 5.00"
+semester_label = "单学期 GPA"
+cumulative_label = "累计 GPA"
+x_label = "学期"
+y_label = "GPA（5分制）"
+replay_label = "重播动画"
+range_note = "纵轴为局部范围，便于查看变化。"
+max_gpa = 5.0
+
+[[items.trend.points]]
+label = "大一上"
+gpa = 4.69
+cumulative_gpa = 4.69
+
+[[items.trend.points]]
+label = "大一下"
+gpa = 4.56
+cumulative_gpa = 4.63
+
+[[items.trend.points]]
+label = "大二上"
+gpa = 5.00
+cumulative_gpa = 4.75
+
+[[items.trend.points]]
+label = "大二下"
+gpa = 4.98
+cumulative_gpa = 4.81
 
 [[items]]
 title = "核心课程"

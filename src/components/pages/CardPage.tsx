@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import { CardPageConfig } from '@/types/page';
+import AcademicTrend from './AcademicTrend';
 
 const markdownComponents = {
     p: ({ children }: React.ComponentProps<'p'>) => <p className="mb-3 last:mb-0">{children}</p>,
@@ -91,6 +92,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                             ))}
                                         </div>
                                     )}
+                                    {item.trend && <AcademicTrend config={item.trend} />}
                                 </motion.div>
                             ))}
                         </div>

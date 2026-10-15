@@ -17,6 +17,19 @@ export interface TextPageConfig extends BasePageConfig {
     pdf_preview?: { src: string; width: number; height: number; alt?: string };
 }
 
+export interface AcademicTrendConfig {
+    title: string;
+    subtitle: string;
+    x_label: string;
+    y_label: string;
+    replay_label: string;
+    range_note: string;
+    semester_label: string;
+    cumulative_label: string;
+    max_gpa: number;
+    points: Array<{ label: string; gpa: number; cumulative_gpa: number }>;
+}
+
 export interface CardItem {
     title: string;
     group?: string;
@@ -26,6 +39,7 @@ export interface CardItem {
     tags?: string[];
     link?: string;
     image?: string;
+    trend?: AcademicTrendConfig;
 }
 
 export interface CardPageConfig extends BasePageConfig {

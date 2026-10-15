@@ -7,11 +7,42 @@ title = "Academic Record"
 subtitle = "Third-year undergraduate"
 date = "Sep 2024 — Present"
 content = """
-- **GPA:** 4.80 / 5.00
+- **GPA:** 4.81 / 5.00
 - **Rank:** 4 / 86 (4.65%)
 - **Major:** Basic Disciplines Talent Training Base (Life Sciences)
 """
 tags = ["Tongji University", "Life Sciences"]
+
+[items.trend]
+title = "Semester GPA Trend"
+subtitle = "Semester and cumulative GPA · Maximum 5.00"
+semester_label = "Semester GPA"
+cumulative_label = "Cumulative GPA"
+x_label = "Semester"
+y_label = "GPA (out of 5)"
+replay_label = "Replay animation"
+range_note = "The vertical axis shows a partial range to make changes easier to see."
+max_gpa = 5.0
+
+[[items.trend.points]]
+label = "Y1 S1"
+gpa = 4.69
+cumulative_gpa = 4.69
+
+[[items.trend.points]]
+label = "Y1 S2"
+gpa = 4.56
+cumulative_gpa = 4.63
+
+[[items.trend.points]]
+label = "Y2 S1"
+gpa = 5.00
+cumulative_gpa = 4.75
+
+[[items.trend.points]]
+label = "Y2 S2"
+gpa = 4.98
+cumulative_gpa = 4.81
 
 [[items]]
 title = "Core Courses"
