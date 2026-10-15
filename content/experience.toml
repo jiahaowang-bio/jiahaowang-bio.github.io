@@ -1,9 +1,9 @@
 type = "card"
 title = "Experience"
-description = "My responsibilities in research projects, an overseas internship, and a modeling competition."
 
 [[items]]
 title = "Computational Study of Silk Fibroin Conformational Changes and Wound Healing"
+group = "Research"
 subtitle = "University–industry collaborative project · Project lead"
 date = "Sep 2025 — May 2026"
 content = """
@@ -17,6 +17,7 @@ tags = ["Molecular Dynamics", "Silk Fibroin", "Cell Experiments"]
 
 [[items]]
 title = "Protein Evolution Modeling with PLMs and Inverse Folding"
+group = "Research"
 subtitle = "Overseas internship project · Project lead · McGill University, Canada"
 date = "Jun 2025 — Jun 2026"
 content = """
@@ -30,6 +31,7 @@ tags = ["Protein Language Models", "Inverse Folding", "DMS Benchmarking"]
 
 [[items]]
 title = "2026 National College Student Statistical Modeling Competition"
+group = "Competitions"
 subtitle = "Third Prize, Shanghai division"
 date = "Jul 2026"
 content = """

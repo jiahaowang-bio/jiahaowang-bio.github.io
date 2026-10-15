@@ -1,9 +1,9 @@
 type = "card"
 title = "经历"
-description = "科研项目、海外实习与竞赛中的个人职责。"
 
 [[items]]
 title = "计算模拟丝素蛋白构象转变及愈伤作用机理"
+group = "科研"
 subtitle = "校企合作项目 · 负责人"
 date = "2025.09 — 2026.05"
 content = """
@@ -17,6 +17,7 @@ tags = ["分子动力学模拟", "丝素蛋白", "细胞实验"]
 
 [[items]]
 title = "基于 PLM 和逆折叠算法的蛋白进化模型"
+group = "科研"
 subtitle = "海外实习项目 · 负责人 · 麦吉尔大学（加拿大）"
 date = "2025.06 — 2026.06"
 content = """
@@ -30,6 +31,7 @@ tags = ["蛋白语言模型", "逆折叠", "DMS benchmark"]
 
 [[items]]
 title = "2026 年全国大学生统计建模竞赛"
+group = "竞赛"
 subtitle = "上海市三等奖"
 date = "2026.07"
 content = """
