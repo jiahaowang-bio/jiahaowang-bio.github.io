@@ -1,8 +1,8 @@
 - **[Academics](/academics/)**  
-  Academic performance: GPA 4.81/5.00, rank 4/86, core courses, and English proficiency.
+  Academic record, core courses, and English proficiency
 - **[Experience](/experience/)**  
-  My role and contributions in two research projects and a statistical modeling competition.
+  Research internships and competition projects
 - **[Exploration](/exploration/)**  
-  Research reading and independent study in protein evolution, molecular dynamics, and medical imaging.
+  Independent learning and exploration
 - **[CV](/cv/)**  
-  Education, selected experience, skills, and contact information.
+  Digital CV
