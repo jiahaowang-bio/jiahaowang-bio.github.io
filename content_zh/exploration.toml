@@ -1,5 +1,6 @@
 type = "card"
 title = "探索"
+quote = "路漫漫其修远兮，吾将上下而求索。"
 description = "围绕生命科学问题的科研阅读、模型构建与实践尝试。"
 
 [[items]]

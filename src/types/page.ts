@@ -1,6 +1,7 @@
 export interface BasePageConfig {
     type: 'about' | 'publication' | 'card' | 'text';
     title: string;
+    quote?: string;
     description?: string;
 }
 

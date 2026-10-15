@@ -1,5 +1,6 @@
 type = "card"
 title = "Exploration"
+quote = "To strive, to seek, to find, and not to yield"
 description = "Research reading, model development, and practical experiments around questions in life sciences."
 
 [[items]]

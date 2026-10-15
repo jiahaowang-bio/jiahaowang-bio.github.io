@@ -16,6 +16,7 @@ interface SectionConfig {
   id: string;
   type: 'markdown' | 'publications' | 'list';
   title?: string;
+  quote?: string;
   source?: string;
   filter?: string;
   limit?: number;
@@ -76,6 +77,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
                         key={section.id}
                         content={section.content || ''}
                         title={section.title}
+                        quote={section.quote}
                         cardLinks={section.id === 'materials'}
                       />
                     );

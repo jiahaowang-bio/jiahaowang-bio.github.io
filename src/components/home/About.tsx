@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { useMessages } from '@/lib/i18n/useMessages';
 import { Children, isValidElement, type ReactNode } from 'react';
 import Link from 'next/link';
+import HeadingWithQuote from '@/components/ui/HeadingWithQuote';
 
 function getCardHref(children: ReactNode): string | undefined {
     for (const child of Children.toArray(children)) {
@@ -18,10 +19,11 @@ function getCardHref(children: ReactNode): string | undefined {
 interface AboutProps {
     content: string;
     title?: string;
+    quote?: string;
     cardLinks?: boolean;
 }
 
-export default function About({ content, title, cardLinks = false }: AboutProps) {
+export default function About({ content, title, quote, cardLinks = false }: AboutProps) {
     const messages = useMessages();
     const resolvedTitle = title || messages.home.about;
 
@@ -31,7 +33,8 @@ export default function About({ content, title, cardLinks = false }: AboutProps)
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
         >
-            <h2 className="text-3xl font-serif font-bold text-primary mb-5">{resolvedTitle}</h2>
+            <HeadingWithQuote as="h2" title={resolvedTitle} quote={quote}
+                headingClassName="text-3xl font-serif font-bold text-primary" className="mb-5" />
             <div className="text-base sm:text-lg text-neutral-700 dark:text-neutral-600 leading-8">
                 <ReactMarkdown
                     components={{

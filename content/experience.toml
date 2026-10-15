@@ -1,5 +1,6 @@
 type = "card"
 title = "Experience"
+quote = "Experience teaches."
 
 [[items]]
 title = "Computational Study of Silk Fibroin Conformational Changes and Wound Healing"

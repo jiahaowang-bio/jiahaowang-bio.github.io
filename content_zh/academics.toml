@@ -1,5 +1,6 @@
 type = "card"
 title = "学业成绩"
+quote = "博学之，审问之，慎思之。"
 description = "同济大学生命科学与技术学院 · 基础学科拔尖基地（生命科学）"
 
 [[items]]

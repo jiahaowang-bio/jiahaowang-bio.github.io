@@ -9,6 +9,7 @@ id = "introduction"
 type = "markdown"
 source = "bio.md"
 title = "关于我"
+quote = "我与我周旋久，宁做我。"
 
 [[sections]]
 id = "materials"

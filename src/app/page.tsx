@@ -10,6 +10,7 @@ interface SectionConfig {
   id: string;
   type: 'markdown' | 'publications' | 'list';
   title?: string;
+  quote?: string;
   source?: string;
   filter?: string;
   limit?: number;
